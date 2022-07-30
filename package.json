@@ -34,16 +34,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-modal-utilities",
+  "name": "react-modal-utility",
   "author": "Zainuddin99",
-  "module": "dist/react-modal-utilities.esm.js",
+  "module": "dist/react-modal-utility.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-modal-utilities.cjs.production.min.js",
+      "path": "dist/react-modal-utility.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-modal-utilities.esm.js",
+      "path": "dist/react-modal-utility.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -66,7 +66,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zainuddin99/react-modal-utilities.git"
+    "url": "https://github.com/Zainuddin99/react-modal-utility.git"
   },
   "config": {
     "commitizen": {
