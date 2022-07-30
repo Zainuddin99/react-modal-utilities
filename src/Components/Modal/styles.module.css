@@ -35,16 +35,14 @@
   padding-top: 0;
   padding: 16px 25px;
   max-height: 90%;
-  max-width: 800px;
+  width: fit-content;
   min-width: 400px;
   overflow: auto;
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: blue orange; /* scroll thumb and track */
 }
 
 @media only screen and (max-width: 500px) {
-  .modal-container {
-    width: 80%;
+  .modal-container{
+    min-width: 80%;
   }
 }
 
