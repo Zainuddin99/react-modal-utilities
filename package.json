@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -13,11 +13,12 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
+    "commit": "git-cz",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "semantic-release": "semantic-release --branches main"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -50,16 +51,26 @@
     "@size-limit/preset-small-lib": "^7.0.8",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.1",
+    "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "semantic-release": "^19.0.3",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
-  "dependencies": {
-    "postcss": "^8.4.14",
-    "rollup-plugin-postcss": "^4.0.2"
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zainuddin99/react-modal-utilities.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
