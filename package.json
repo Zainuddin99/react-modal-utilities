@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=10"
   },
-  "scripts": {
+  "scripts": { 
     "start": "tsdx watch",
     "build": "tsdx build",
     "commit": "git-cz",
