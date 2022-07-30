@@ -45,7 +45,7 @@ export default function App() {
 - style (object): user defined style for Modal
 - className (string): className for modal
 - labelStyle (object): User defined style to label
-- labelClassName (string): className for label
+- labelClassName (string): className for label 
 
 # Hooks
 
