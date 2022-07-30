@@ -15,7 +15,7 @@ export type ModalProps = {
     labelClassName?: string;
     labelStyle?: CSSProperties;
     //Specifying weather to close when modal when user touches backgroud, default true
-    backdrop: boolean;
+    backdrop?: boolean;
 };
 
 function Modal({ children, style = {}, animate = "fade-down", close, className, label, labelClassName, labelStyle = {}, backdrop = true }: ModalProps) {
