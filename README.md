@@ -1,5 +1,9 @@
 React responsive modal with features like Modal component and hook to manage the lifecycle of Modal.
 
+### CodeSandbox link
+
+[https://codesandbox.io/s/react-modal-utility-k3232l](https://codesandbox.io/s/react-modal-utility-k3232l)
+
 # Components
 
 ## Modal
@@ -32,6 +36,7 @@ export default function App() {
 
 ### Optional props
 
+- Close (function): To close modal. If excluded then manual close is disabled.
 - label (string): heading of the modal
 - backdrop (boolean): Specifies weather to close modal when user clicks background
   - Default: true
