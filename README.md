@@ -11,7 +11,7 @@ React responsive modal with features like Modal component and hook to manage the
 > Use Modal Component without useModalState hook
 
 ```js
-import { Modal } from 'react-modal-utilities';
+import { Modal } from 'react-modal-utility';
 import { useState } from 'react';
 
 export default function App() {
@@ -55,7 +55,7 @@ export default function App() {
 > Use Modal with 'useModalState' hook
 
 ```js
-import { Modal, useModalState } from 'react-modal-utilities';
+import { Modal, useModalState } from 'react-modal-utility';
 
 export default function App() {
   //Variables can be customised
