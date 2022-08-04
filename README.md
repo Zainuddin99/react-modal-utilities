@@ -41,10 +41,19 @@ export default function App() {
   - Default: true
 - animate<string>: "fade-in", "pop-down", "fade-down", "none"
   - Default: "fade-down"
+<<<<<<< Updated upstream
 - style<object>: user defined style for Modal
 - className<string>: className for modal
 - labelStyle<object>: User defined style to label
 - labelClassName<string>: className for label
+=======
+- style (object): user defined style for Modal
+- className (string): className for modal
+- labelStyle (object): User defined style to label
+- labelClassName (string): className for label
+- fullScreen (boolean): specifies weather the modal should fit full window screen
+- hideCloseIcon (boolean): Specifies to hide close icon
+>>>>>>> Stashed changes
 
 # Hooks
 

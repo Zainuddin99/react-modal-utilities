@@ -16,16 +16,42 @@ export type ModalProps = {
     labelStyle?: CSSProperties;
     //Specifying weather to close when modal when user touches backgroud, default true
     backdrop?: boolean;
+    hideCloseIcon?: boolean;
+    fullScreen: boolean
 };
 
-function Modal({ children, style = {}, animate = "fade-down", close, className, label, labelClassName, labelStyle = {}, backdrop = true }: ModalProps) {
+function Modal(
+    {
+        children,
+        style = {},
+        animate = "fade-down",
+        close,
+        className,
+        label,
+        labelClassName,
+        labelStyle = {},
+        backdrop = true,
+        hideCloseIcon = false,
+        fullScreen = false
+    }: ModalProps) {
+
+    React.useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => { document.body.style.overflow = 'unset' }
+    }, [])
 
     return (
         <>
             <div className={classes["modal-wrapper"]} onClick={backdrop ? close : () => null} ></div>
-            <div className={`${classes["modal-container"]} ${classes[animate]} ${className || ''}}`} style={style}>
+            <div
+                className={`${classes["modal-container"]} ${classes[animate]} 
+                    ${fullScreen ? classes["full-screen"] : ''} 
+                    ${className || ''}}`
+                }
+                style={style}
+            >
                 {
-                    close && <CloseIcon onClick={close} />
+                    close && !hideCloseIcon && <CloseIcon onClick={close} />
                 }
                 {
                     label && <>
