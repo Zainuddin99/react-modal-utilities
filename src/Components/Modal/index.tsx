@@ -8,7 +8,7 @@ export type ModalProps = {
     close?: () => void;
     //Main modal style
     style?: CSSProperties;
-    animate?: "fade-in" | "pop-down" | "fade-down" | "none";
+    animate?: "fade-in" | "pop-down" | "fade-down" | "pop-up" | 'expand-in' | 'shrink-in' | "none";
     //Modaluse defined claassName
     className?: string;
     label?: string;

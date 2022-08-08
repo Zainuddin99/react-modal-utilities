@@ -54,10 +54,11 @@
 
 .modal-container > .label {
   padding-bottom: 7px;
-  font-size: 1.5rem;
-  font-weight: 550;
-  color: grey;
-  border-bottom: 2px solid lightgrey;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #595959;
+  text-transform: capitalize;
+  letter-spacing: 0.06rem;
 }
 
 .close-icon {
@@ -75,8 +76,44 @@
   animation: pop-down 0.2s ease-out;
 }
 
+.modal-container.pop-up {
+  animation: pop-up 0.2s ease-out;
+}
+
 .modal-container.fade-down {
   animation: fade-down 0.3s ease-out;
+}
+
+.modal-container.shrink-in {
+  animation: shrink-in 0.3s ease-out;
+}
+
+.modal-container.expand-in {
+  animation: expand-in 0.3s ease-out;
+}
+
+@keyframes shrink-in {
+  from {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.8;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes expand-in {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.8;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
@@ -92,6 +129,16 @@
 @keyframes pop-down {
   from {
     top: 10%;
+  }
+
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes pop-up {
+  from {
+    top: 90%;
   }
 
   to {
