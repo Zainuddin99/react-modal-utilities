@@ -47,7 +47,7 @@ export default function App() {
 - labelStyle (object): User defined style to label
 - labelClassName (string): className for label
 - hideCloseIcon (boolean): To Hide close icon
-- fullScreen (boolean): Specifies weather modal needs to fit full window screen
+- fullScreen (boolean): Specifies weather modal needs to fit full window screen 
 
 # Hooks
 
