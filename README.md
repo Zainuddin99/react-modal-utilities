@@ -40,7 +40,7 @@ export default function App() {
 - label (string): heading of the modal
 - backdrop (boolean): Specifies weather to close modal when user clicks background
   - Default: true
-- animate (string): "fade-in", "fade-down", "pop-down", "pop-up", "expand-in", "shrink-in", "none"
+- animate (string): "none", "fade-in", "fade-down", "pop-down", "pop-up", "expand-in", "shrink-in"
   - Default: "fade-down"
 - style (object): user defined style for Modal
 - className (string): className for modal
