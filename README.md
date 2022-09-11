@@ -40,7 +40,7 @@ export default function App() {
 - label (string): heading of the modal
 - backdrop (boolean): Specifies weather to close modal when user clicks background
   - Default: true
-- animate (string): "fade-in", "pop-down", "fade-down", "expand-in", "shrink-in", "none"
+- animate (string): "fade-in", "fade-down", "pop-down", "pop-up", "expand-in", "shrink-in", "none"
   - Default: "fade-down"
 - style (object): user defined style for Modal
 - className (string): className for modal
@@ -48,7 +48,6 @@ export default function App() {
 - labelClassName (string): className for label
 - hideCloseIcon (boolean): To Hide close icon
 - fullScreen (boolean): Specifies weather modal needs to fit full window screen
-- hideCloseIcon (boolean): Hides close icon
 
 # Hooks
 
